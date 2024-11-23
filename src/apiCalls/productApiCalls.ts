@@ -7,7 +7,7 @@ export async function getProducts(
   pageNumber: string | undefined
 ): Promise<Product[]> {
   const response = await fetch(
-    `http://localhost:3000/api/products?pageNumber=${pageNumber}`, {
+    `${DOMAIN}/api/products?pageNumber=${pageNumber}`, {
       cache: "no-store"
     }
   );
@@ -33,7 +33,7 @@ export async function getProductsBasedOnSearch(
   searchText: string
 ): Promise<Product[]> {
   const response = await fetch(
-    `http://localhost:3000/api/products/search?searchText=${searchText}`, {
+    `${DOMAIN}/api/products/search?searchText=${searchText}`, {
       cache: "no-store"
     }
   );
