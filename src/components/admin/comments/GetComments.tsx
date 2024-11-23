@@ -22,6 +22,9 @@ const GetComments = ({ comments }: GetCommentsProps) => {
         <thead>
           <tr>
             <th className="p-4" style={{ border: "4px solid #ffff00" }}>
+              Owner ID
+            </th>
+            <th className="p-4" style={{ border: "4px solid #ffff00" }}>
               Comment
             </th>
             <th className="p-4" style={{ border: "4px solid #ffff00" }}>
@@ -38,6 +41,9 @@ const GetComments = ({ comments }: GetCommentsProps) => {
               key={comment.id}
               className="text-center bg-customGreen font-semibold"
             >
+              <td className="p-4" style={{ border: "2px solid #ffff00" }}>
+                {comment.userId}
+              </td>
               <td className="p-4" style={{ border: "2px solid #ffff00" }}>
                 {comment.text}
               </td>
