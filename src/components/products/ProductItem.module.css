@@ -1,0 +1,15 @@
+.productItemBTN {
+    background: linear-gradient(to right, #00c853, #b2ff59);
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.productItemBTN:hover {
+    background: linear-gradient(to right, #76ff03, #64dd17);
+}
+
+.active{
+    border: 2px #ffff00 solid;
+    color: #ffff00;
+    font-weight: bold;
+}

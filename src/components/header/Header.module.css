@@ -1,0 +1,144 @@
+.header {
+    height: 6rem;
+    background-color: #1b5e20;
+    border-bottom: 4px solid #ffff00;
+    top: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    z-index: 101;
+}
+
+
+/* ==============================Navbar Part================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    background: linear-gradient(to right, #00ff00, #ffff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    gap: 0.3rem;
+}
+
+.menu {
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+
+/* ==============================Center Part================================= */
+.headerLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.headerLinks li {
+    display: flex;
+}
+
+.linkItem {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    gap: 8px;
+    transition: 0.3s ease-in;
+
+}
+
+.linkItem:hover {
+    color: #ffff00;
+}
+
+.activeLink {
+    color: #ffff00;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* ==============================Right-Side Part================================= */
+.rightSide {
+    display: flex;
+    gap: 20px;
+}
+
+.rightSide li {
+    display: flex;
+
+}
+
+.rightSideItems {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #00c853, #b2ff59);
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.rightSideItems:hover {
+    background: linear-gradient(to right, #ddda17, #c8ff03);
+}
+
+.activeLinkAuth {
+    background: linear-gradient(to right, #ddda17, #c8ff03);
+}
+
+.logoutButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+/* ==============================Responsive Design================================= */
+
+@media (max-width: 1080px) {
+    .menu {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .iconsWrapper {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: #1b5e20;
+        transition: all 0.5s ease-in;
+        border-bottom: 4px solid #ffff00;
+        z-index: 100;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .headerLinks {
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

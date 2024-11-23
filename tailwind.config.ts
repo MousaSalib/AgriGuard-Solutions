@@ -9,8 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        customGreen: "#1b5e20",
+        customBrown: "#4e342e",
+        customGreenOnHover: "#133a14",
+        customGradient: "linear-gradient(to right, #00ff00, #ffff00)",
       },
     },
   },

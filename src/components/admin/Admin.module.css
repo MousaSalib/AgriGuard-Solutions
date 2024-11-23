@@ -1,0 +1,30 @@
+.addProductFormBTN {
+    background: linear-gradient(to right, #00c853, #b2ff59);
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.addProductFormBTN:hover {
+    background: linear-gradient(to right, #76ff03, #64dd17);
+}
+
+.dashboardLinks:hover {
+    color: #ffff00;
+    transition: 0.3s ease-in;
+
+}
+
+.activeLink {
+    color: #ffff00;
+    font-weight: 600;
+}
+
+.readMoreLink {
+    background: linear-gradient(to right, #00c853, #b2ff59);
+    font-weight: 600;
+    transition: background 0.3s ease-in;
+}
+
+.readMoreLink:hover {
+    background: linear-gradient(to right, #76ff03, #64dd17);
+}
